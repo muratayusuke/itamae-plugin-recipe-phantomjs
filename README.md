@@ -1,6 +1,6 @@
 # Itamae::Plugin::Recipe::Phantomjs
 
-Installs [phantomjs](http://phantomjs.org/). It's tested only in ubuntu 14.04. Your contribution is welcome.
+Installs [phantomjs](http://phantomjs.org/). It's tested only in ubuntu 14.04 / CentOS 6+   Your contribution is welcome.
 
 ## Installation
 
@@ -26,12 +26,10 @@ include_recipe 'phantomjs'
 
 ### node.yml
 
-`node.yml` is used only by phantomjs::source.
-
 ```yml
 phantomjs:
   version: 2.0.0
-  jobs: 1 # see http://phantomjs.org/build.html
+  jobs: 1 # see http://phantomjs.org/build.html, used only by phantomjs::source.
 ```
 
 ## Contributing

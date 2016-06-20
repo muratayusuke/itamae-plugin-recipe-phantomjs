@@ -2,6 +2,8 @@ version = (node[:phantomjs] && node[:phantomjs][:version]) || '2.1.1'
 
 package 'libfontconfig' if "ubuntu" == node[:platform]
 
+execute 'sudo yum groupinstall "Japanese Support" -y' if "redhat" == node[:platform]
+
 execute 'phantomjs' do
 
   user 'root'
